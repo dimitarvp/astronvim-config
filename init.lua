@@ -25,4 +25,3 @@ vim.wo.wrap = true
 vim.wo.linebreak = true
 vim.opt.termguicolors = true
 
-vim.cmd.colorscheme "catppuccin"
