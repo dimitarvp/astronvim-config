@@ -47,8 +47,29 @@ return {
     opts = function(_, opts)
       -- add more things to the ensure_installed table protecting against community packs modifying it
       opts.ensure_installed = require("astrocore").list_insert_unique(opts.ensure_installed, {
-        "prettier",
-        "stylua",
+        "biome", -- Javascript, Typescript
+        "gofumpt",
+        "goimports",
+        "golangci-lint", -- Golang
+        "gomodifytags",
+        "htmlhint",
+        "nilaway", -- Golang
+        "prettier", -- Javascript, Typescript
+        "rubocop",
+        "ruff", -- Python
+        "selene",
+        "shellcheck",
+        "shellharden",
+        "sqlfluff",
+        "standardjs",
+        "staticcheck", -- Golang
+        "stylua", -- Lua
+        "systemdlint",
+        "tflint",
+        "tfsec",
+        "trivy", -- Many languages
+        "vacuum", -- OpenAPI / Swagger
+        "yamllint",
         -- add more arguments for adding more null-ls sources
       })
     end,
