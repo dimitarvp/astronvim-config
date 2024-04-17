@@ -7,7 +7,12 @@
 ---@type LazySpec
 return {
   "AstroNvim/astrocommunity",
+  { import = "astrocommunity.pack.elixir-phoenix" },
+  { import = "astrocommunity.pack.go" },
+  { import = "astrocommunity.pack.just" },
   { import = "astrocommunity.pack.lua" },
+  { import = "astrocommunity.pack.pkl" },
+  { import = "astrocommunity.pack.rust" },
   { import = "astrocommunity.colorscheme.catppuccin" },
   {
     import = "astrocommunity.lsp.nvim-lint",
