@@ -23,7 +23,6 @@ return {
         "golangci_lint_ls", -- Golang
         "html",
         "htmx",
-        "json-ld",
         "jsonls",
         "lemminx", -- XML
         "lua_ls",
@@ -37,7 +36,6 @@ return {
         "yamlls",
         "zk", -- Markdown
         "zls", -- Zig
-        "zsh",
         -- add more arguments for adding more language servers
       })
     end,
