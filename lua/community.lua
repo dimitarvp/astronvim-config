@@ -14,6 +14,7 @@ return {
   { import = "astrocommunity.pack.pkl" },
   { import = "astrocommunity.pack.rust" },
   { import = "astrocommunity.colorscheme.catppuccin" },
+  { import = "astrocommunity.diagnostics.trouble-nvim" },
   { import = "astrocommunity.editing-support.nvim-treesitter-context" },
   {
     import = "astrocommunity.lsp.nvim-lint",
