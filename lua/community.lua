@@ -1,4 +1,4 @@
-if true then return {} end -- WARN: REMOVE THIS LINE TO ACTIVATE THIS FILE
+-- if true then return {} end -- WARN: REMOVE THIS LINE TO ACTIVATE THIS FILE
 
 -- AstroCommunity: import any community modules here
 -- We import this file in `lazy_setup.lua` before the `plugins/` folder.
@@ -8,5 +8,41 @@ if true then return {} end -- WARN: REMOVE THIS LINE TO ACTIVATE THIS FILE
 return {
   "AstroNvim/astrocommunity",
   { import = "astrocommunity.pack.lua" },
+  { import = "astrocommunity.colorscheme.catppuccin" },
+  {
+    import = "astrocommunity.lsp.nvim-lint",
+    opts = {
+      linters_by_ft = {
+        clojure = { "clj-kondo" },
+        cmakefile = { "cmakelint" },
+        cpp = { "clangtidy", "cppcheck", "cpplint", "flawfinder" },
+        css = { "stylelint" },
+        dotenv = { "dotenv_linter" },
+        elixir = { "credo" },
+        dockerfile = { "hadolint", "trivy" },
+        haskell = { "hlint" },
+        go = { "golangcilint", "revive" },
+        java = { "checkstyle" },
+        javascript = { "biomejs", "eslint", "jshint", "standardjs" },
+        json = { "jsonlint" },
+        jsx = { "biomejs" },
+        kotlin = { "ktlint" },
+        latex = { "chktex", "lacheck" },
+        -- lua = { 'selene' },
+        markdown = { "markdownlint", "vale" },
+        nix = { "nix", "statix" },
+        perl = { "checkpatch", "perlcritic", "perlimports" },
+        php = { "php", "phpcs", "phpinsights", "phpmd", "phpstan", "psalm" },
+        proto = { "buf_lint" },
+        python = { "bandit", "flake8", "mypy", "pycodestyle", "pydocstyle", "pylint", "ruff", "vulture" },
+        ruby = { "ruby", "rubocop", "standardrb" },
+        shell = { "shellcheck" },
+        sql = { "sqlfluff" },
+        typescript = { "biomejs" },
+        yaml = { "yamllint" },
+        zsh = { "zsh" },
+      },
+    },
+  },
   -- import/override with your plugins folder
 }
