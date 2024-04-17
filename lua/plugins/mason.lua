@@ -1,4 +1,4 @@
-if true then return {} end -- WARN: REMOVE THIS LINE TO ACTIVATE THIS FILE
+-- if true then return {} end -- WARN: REMOVE THIS LINE TO ACTIVATE THIS FILE
 
 -- Customize Mason plugins
 
@@ -11,7 +11,33 @@ return {
     opts = function(_, opts)
       -- add more things to the ensure_installed table protecting against community packs modifying it
       opts.ensure_installed = require("astrocore").list_insert_unique(opts.ensure_installed, {
+        "bashls",
+        "cssls",
+        "cssmodules_ls",
+        "dockerls",
+        "docker_compose_language_service",
+        "elixirls",
+        "erlangls",
+        "eslint", -- Javascript, Typescript
+        "gopls", -- Golang
+        "golangci_lint_ls", -- Golang
+        "html",
+        "htmx",
+        "json-ld",
+        "jsonls",
+        "lemminx", -- XML
         "lua_ls",
+        "marksman", -- Markdown
+        "pyright", -- Python
+        "rust_analyzer",
+        "sqlls",
+        "taplo", -- TOML
+        "tsserver", -- Javascript, Typescript
+        "vimls",
+        "yamlls",
+        "zk", -- Markdown
+        "zls", -- Zig
+        "zsh",
         -- add more arguments for adding more language servers
       })
     end,
