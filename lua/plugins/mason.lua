@@ -56,7 +56,6 @@ return {
         "prettier", -- Javascript, Typescript
         "rubocop",
         "ruff", -- Python
-        "selene",
         "shellcheck",
         "shellharden",
         "sqlfluff",
