@@ -16,6 +16,7 @@ return {
   { import = "astrocommunity.colorscheme.catppuccin" },
   { import = "astrocommunity.diagnostics.trouble-nvim" },
   { import = "astrocommunity.editing-support.nvim-treesitter-context" },
+  { import = "astrocommunity.recipes.telescope-nvchad-theme" },
   {
     import = "astrocommunity.lsp.nvim-lint",
     opts = {
