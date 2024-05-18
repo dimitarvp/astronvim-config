@@ -24,6 +24,7 @@ return {
         "htmx",
         "jsonls",
         "lemminx", -- XML
+        "lexical", -- Elixir
         "lua_ls",
         "marksman", -- Markdown
         "pyright", -- Python
