@@ -45,8 +45,8 @@ return {
     -- customize language server configuration options passed to `lspconfig`
     ---@diagnostic disable: missing-fields
     config = {
-      elixirls = { autostart = false },
-      lexical = { autostart = true },
+      elixirls = { autostart = true },
+      lexical = { autostart = false },
       tailwindcss = { autostart = false },
       -- clangd = { capabilities = { offsetEncoding = "utf-8" } },
     },
