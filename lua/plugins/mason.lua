@@ -31,7 +31,7 @@ return {
         "rust_analyzer",
         "sqlls",
         "taplo", -- TOML
-        "tsserver", -- Javascript, Typescript
+        "ts_ls", -- Javascript, Typescript
         "vimls",
         "yamlls",
         "zk", -- Markdown
