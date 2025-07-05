@@ -21,7 +21,6 @@ return {
         "gopls", -- Golang
         "golangci_lint_ls", -- Golang
         "html",
-        "htmx",
         "jsonls",
         "lemminx", -- XML
         "lexical", -- Elixir
