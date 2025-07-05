@@ -37,6 +37,11 @@ return {
         "zls", -- Zig
         -- add more arguments for adding more language servers
       })
+      opts.automatic_installation = false
+
+      -- Explicitly exclude selene from any automatic installation
+      opts.skip_setup = opts.skip_setup or {}
+      table.insert(opts.skip_setup, "selene")
     end,
   },
   -- use mason-null-ls to configure Formatters/Linter installation for null-ls sources
@@ -70,6 +75,19 @@ return {
         "yamllint",
         -- add more arguments for adding more null-ls sources
       })
+
+      -- Remove selene from ensure_installed if it somehow gets added by community packs
+      if opts.ensure_installed then
+        for i = #opts.ensure_installed, 1, -1 do
+          if opts.ensure_installed[i] == "selene" then table.remove(opts.ensure_installed, i) end
+        end
+      end
+
+      opts.automatic_installation = false
+      opts.handlers = {
+        -- Explicitly skip selene - this prevents setup even if it gets installed
+        selene = function() end,
+      }
     end,
   },
   {
@@ -81,6 +99,26 @@ return {
         "python",
         -- add more arguments for adding more debuggers
       })
+      opts.automatic_installation = false
+    end,
+  },
+
+  -- Add mason-tool-installer configuration to prevent it from installing selene
+  {
+    "WhoIsSethDaniel/mason-tool-installer.nvim",
+    optional = true,
+    opts = function(_, opts)
+      opts = opts or {}
+      opts.ensure_installed = opts.ensure_installed or {}
+
+      -- Remove selene from ensure_installed if it's there
+      for i = #opts.ensure_installed, 1, -1 do
+        if opts.ensure_installed[i] == "selene" then table.remove(opts.ensure_installed, i) end
+      end
+
+      opts.auto_update = false
+      opts.run_on_start = false
+      return opts
     end,
   },
 }
