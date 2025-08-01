@@ -73,18 +73,22 @@ return {
     pickers = {
       find_files = {
         layout_strategy = "horizontal",
+        prompt_prefix = "📄 ",
         layout_config = layout_config(),
       },
       live_grep = {
         layout_strategy = "horizontal",
+        prompt_prefix = "🔎 ",
         layout_config = layout_config(),
       },
       grep_string = {
         layout_strategy = "horizontal",
+        prompt_prefix = "🔎 ",
         layout_config = layout_config(),
       },
       buffers = {
         layout_strategy = "horizontal",
+        prompt_prefix = "🗄️ ",
         layout_config = layout_config(),
         initial_mode = "insert",
         mappings = {
@@ -99,10 +103,12 @@ return {
       },
       oldfiles = {
         layout_strategy = "horizontal",
+        prompt_prefix = "🕒 ",
         layout_config = layout_config(),
       },
       git_files = {
         layout_strategy = "horizontal",
+        prompt_prefix = "🔀 ",
         layout_config = layout_config(),
       },
     },
