@@ -4,34 +4,35 @@ return {
   "nvim-telescope/telescope.nvim",
   opts = {
     defaults = {
-      -- layout_config = {
-      --   -- prompt_position = "top",
-      --   height = 0.90,
-      --   width = 0.90,
-      --   bottom_pane = {
-      --     height = 25,
-      --     preview_cutoff = 120,
-      --   },
-      --   center = {
-      --     height = 0.4,
-      --     preview_cutoff = 40,
-      --     width = 0.5,
-      --   },
-      --   cursor = {
-      --     preview_cutoff = 40,
-      --   },
-      --   horizontal = {
-      --     preview_cutoff = 120,
-      --     preview_width = 0.6,
-      --   },
-      --   vertical = {
-      --     preview_cutoff = 40,
-      --   },
-      --   flex = {
-      --     flip_columns = 150,
-      --   },
-      -- },
-      prompt_prefix = " ",
+      layout_config = {
+        prompt_position = "top",
+        height = 0.80,
+        width = 0.99,
+        bottom_pane = {
+          height = 25,
+          preview_cutoff = 120,
+        },
+        center = {
+          height = 0.4,
+          preview_cutoff = 40,
+          width = 0.5,
+        },
+        cursor = {
+          preview_cutoff = 40,
+        },
+        horizontal = {
+          preview_cutoff = 120,
+          preview_width = 0.6,
+        },
+        vertical = {
+          preview_cutoff = 40,
+        },
+        flex = {
+          flip_columns = 150,
+        },
+      },
+      -- prompt_prefix = " ",
+      prompt_prefix = "🔎 ",
       scroll_strategy = "limit",
     },
     pickers = {
