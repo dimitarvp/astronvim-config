@@ -16,7 +16,7 @@ return {
     highlights = {
       init = { -- this table overrides highlights in all themes
         Comment = { italic = false, fg = "#7687a0" },
-        keyword = { italic = false },
+        ["@keyword"] = { italic = false, fg = "#ae81ff" },
         -- Normal = { bg = "#000000" },
       },
       astrotheme = { -- a table of overrides/changes when applying the astrotheme theme
