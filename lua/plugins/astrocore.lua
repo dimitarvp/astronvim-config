@@ -73,6 +73,8 @@ return {
           end,
           desc = "Close buffer",
         },
+
+        ["<leader>fH"] = { "<cmd>Telescope highlights<CR>", desc = "Find Highlights" },
       },
       t = {
         -- setting a mapping to false will disable it
