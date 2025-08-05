@@ -11,10 +11,12 @@ return {
   ---@type AstroUIOpts
   opts = {
     -- change colorscheme
-    colorscheme = "astrodark",
+    colorscheme = "moonfly",
     -- AstroUI allows you to easily modify highlight groups easily for any and all colorschemes
     highlights = {
       init = { -- this table overrides highlights in all themes
+        Comment = { italic = false, fg = "#7687a0" },
+        keyword = { italic = false },
         -- Normal = { bg = "#000000" },
       },
       astrotheme = { -- a table of overrides/changes when applying the astrotheme theme
