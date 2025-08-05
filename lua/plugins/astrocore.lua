@@ -74,7 +74,9 @@ return {
           desc = "Close buffer",
         },
 
-        ["<leader>fH"] = { "<cmd>Telescope highlights<CR>", desc = "Find Highlights" },
+        ["<leader>fH"] = { "<cmd>Telescope highlights<CR>", desc = "Find highlights" },
+
+        ["<leader>fp"] = { "<cmd>Telescope command_history<CR>", desc = "Find command history" },
       },
       t = {
         -- setting a mapping to false will disable it
