@@ -17,6 +17,8 @@ return {
       init = { -- this table overrides highlights in all themes
         Comment = { italic = false, fg = "#7687a0" },
         ["@keyword"] = { italic = false },
+        RainbowDelimiterBlue = { fg = "#4D94FF" },
+        RainbowDelimiterGreen = { fg = "#9EFF2E" },
         RainbowDelimiterOrange = { fg = "#FF8800" },
         RainbowDelimiterYellow = { fg = "#FFDD00" },
         -- Normal = { bg = "#000000" },
