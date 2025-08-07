@@ -6,7 +6,7 @@
 return {
   "AstroNvim/astrocommunity",
   -- Not sure I like it: does not show all LSP servers. But is otherwise prettier.
-  -- { import = "astrocommunity.bars-and-lines.lualine-nvim" }
+  -- { import = "astrocommunity.bars-and-lines.lualine-nvim" },
   -- Have buffer list scoped to tabpage
   { import = "astrocommunity.bars-and-lines.scope-nvim" },
   -- Color a word that's under the cursor (all instances visible on the screen).
@@ -100,7 +100,7 @@ return {
   { import = "astrocommunity.recipes.auto-session-restore" },
   { import = "astrocommunity.recipes.heirline-mode-text-statusline" },
   -- Would re-enable this if I find a way to customize gid added / removed / modified colors.
-  -- { import = "astrocommunity.recipes.heirline-nvchad-statusline" },
+  { import = "astrocommunity.recipes.heirline-nvchad-statusline" },
   { import = "astrocommunity.recipes.telescope-nvchad-theme" },
   { import = "astrocommunity.utility.telescope-lazy-nvim" },
   -- import/override with your plugins folder
