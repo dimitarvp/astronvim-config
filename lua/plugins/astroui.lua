@@ -56,6 +56,7 @@ return {
         ["@punctuation.special"] = { fg = "#FF8800" },
         ["@string"] = { fg = "#7AA26A" },
         ["@string.special.symbol"] = { fg = "#EDF7D2" },
+        ["@tag.delimiter.heex"] = { fg = "#CDD6F4" },
         ["@variable"] = { fg = "#CDD6F4" },
         GitSignsAdd = { fg = "#A6E3A1" },
         GitSignsAddCul = { fg = "#A6E3A1" },
