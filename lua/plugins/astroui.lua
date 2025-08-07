@@ -14,15 +14,39 @@ return {
     colorscheme = "moonfly",
     -- AstroUI allows you to easily modify highlight groups easily for any and all colorschemes
     highlights = {
-      init = { -- this table overrides highlights in all themes
-        Comment = { italic = false, fg = "#7687a0" },
-        ["@keyword"] = { italic = false },
-        RainbowDelimiterBlue = { fg = "#4D94FF" },
-        RainbowDelimiterGreen = { fg = "#9EFF2E" },
-        RainbowDelimiterOrange = { fg = "#FF8800" },
-        RainbowDelimiterYellow = { fg = "#FFDD00" },
-        -- Normal = { bg = "#000000" },
-      },
+      init = function()
+        local get_hlgroup = require("astroui").get_hlgroup
+        -- get highlights from highlight groups
+        local bg = get_hlgroup("Normal").bg
+        local bg_alt = get_hlgroup("Visual").bg
+        local green = get_hlgroup("String").fg
+        local red = get_hlgroup("Error").fg
+
+        return {
+          -- this table overrides highlights in all themes
+          Comment = { italic = false, fg = "#7687a0" },
+          ["@keyword"] = { italic = false },
+          RainbowDelimiterBlue = { fg = "#4D94FF" },
+          RainbowDelimiterGreen = { fg = "#9EFF2E" },
+          RainbowDelimiterOrange = { fg = "#FF8800" },
+          RainbowDelimiterYellow = { fg = "#FFDD00" },
+          -- Normal = { bg = "#000000" },
+
+          -- return a table of highlights for snacks.picker based on
+          -- colors retrieved from highlight groups
+          SnacksPickerBorder = { fg = bg_alt, bg = bg },
+          SnacksPicker = { bg = bg },
+          SnacksPickerPreviewBorder = { fg = bg, bg = bg },
+          SnacksPickerPreview = { bg = bg },
+          SnacksPickerPreviewTitle = { fg = bg, bg = green },
+          SnacksPickerBoxBorder = { fg = bg, bg = bg },
+          SnacksPickerInputBorder = { fg = bg, bg = bg },
+          SnacksPickerInputSearch = { fg = red, bg = bg },
+          SnacksPickerListBorder = { fg = bg, bg = bg },
+          SnacksPickerList = { bg = bg },
+          SnacksPickerListTitle = { fg = bg, bg = bg },
+        }
+      end,
       astrotheme = { -- a table of overrides/changes when applying the astrotheme theme
         -- Normal = { bg = "#000000" },
       },
