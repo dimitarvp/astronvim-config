@@ -17,6 +17,8 @@ return {
       init = { -- this table overrides highlights in all themes
         Comment = { italic = false, fg = "#7687a0" },
         ["@keyword"] = { italic = false },
+        RainbowDelimiterOrange = { fg = "#FF8800" },
+        RainbowDelimiterYellow = { fg = "#FFDD00" },
         -- Normal = { bg = "#000000" },
       },
       astrotheme = { -- a table of overrides/changes when applying the astrotheme theme
@@ -38,8 +40,6 @@ return {
         GitSignsDelete = { fg = "#F38BA8" },
         GitSignsDeleteCul = { fg = "#F38BA8" },
         GitSignsDeleteNr = { fg = "#F38BA8" },
-        RainbowDelimiterOrange = { fg = "#FF8800" },
-        RainbowDelimiterYellow = { fg = "#FFDD00" },
       },
     },
     -- Icons can be configured throughout the interface
