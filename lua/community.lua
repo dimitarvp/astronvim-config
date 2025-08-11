@@ -99,8 +99,8 @@ return {
   { import = "astrocommunity.pack.typescript" },
   { import = "astrocommunity.recipes.auto-session-restore" },
   { import = "astrocommunity.recipes.heirline-mode-text-statusline" },
-  -- Would re-enable this if I find a way to customize gid added / removed / modified colors.
-  { import = "astrocommunity.recipes.heirline-nvchad-statusline" },
+  -- Re-enable this if I find a way to add back line:column and a number of search occurrences.
+  -- { import = "astrocommunity.recipes.heirline-nvchad-statusline" },
   -- TODO: Uncomment this when we migrate from Telescope to Snacks
   -- { import = "astrocommunity.recipes.picker-nvchad-theme" },
   { import = "astrocommunity.recipes.telescope-nvchad-theme" },
