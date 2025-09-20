@@ -24,6 +24,8 @@ vim.opt.relativenumber = false
 vim.wo.wrap = true
 vim.wo.linebreak = true
 vim.opt.termguicolors = true
+vim.o.autoread = true
+vim.o.confirm = false
 
 vim.api.nvim_create_autocmd({ "BufWritePost" }, {
   callback = function()
