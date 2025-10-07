@@ -12,7 +12,7 @@ return {
         "bashls",
         "cssls",
         "cssmodules_ls",
-        "docker_language_server",
+        "docker-language-server",
         "docker_compose_language_service",
         "earthlyls",
         "elixirls",
