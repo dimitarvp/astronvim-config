@@ -10,6 +10,8 @@ return {
   "AstroNvim/astrocore",
   ---@type AstroCoreOpts
   opts = {
+    -- Map docker-compose files to the correct filetype (was provided by astrocommunity.pack.docker)
+    filetypes = { filename = { ["docker-compose.yaml"] = "yaml.docker-compose" } },
     -- Configure core features of AstroNvim
     features = {
       large_buf = { size = 1024 * 500, lines = 10000 }, -- set global limits for large files for disabling features like treesitter
