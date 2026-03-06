@@ -1,3 +1,5 @@
+⚠️ This config is being phased out and will no longer be used. The repo is being archived, and could potentially be removed.
+
 # AstroNvim Template
 
 **NOTE:** This is for AstroNvim v4+
